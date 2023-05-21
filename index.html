@@ -15,13 +15,13 @@
     <div class="toolBar">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
-                <i class="fa-brands fa-instagram fa-lg" style="line-height: 1em;"></i>
+                <i class="fa-brands fa-instagram fa-xl" style="line-height: 1em;"></i>
                 <p class="instName">Instagram</p>
             </div>
             <div class="d-flex">
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="background-color:green;">Create a new post</a>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
                 </li>
                 <div class="btn-group" style="margin-left: 5px;;">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,6 +40,38 @@
         </div>
     </div>
     <!-- toolBar-end-->
+    <!--modal-start-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="fas fa-camera"></i>
+                </button>
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--modal-start-->
     <!--Tabs start-->
     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -59,39 +91,39 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col px-0 ml-1">
-                        <img src="https://picsum.photos/id/1004/400/400">
+                        <img src="https://picsum.photos/id/1020/400/400">
                     </div>
                     <div class="col px-0">
-                        <img src="https://picsum.photos/id/1011/400/400">
+                        <img src="https://picsum.photos/id/1021/400/400">
                     </div>
                     <div class="col px-0">
-                        <img src="https://picsum.photos/id/1015/400/400">
+                        <img src="https://picsum.photos/id/1023/400/400">
                     </div>
                 </div>
             </div>
             <div class="container-fluid seg-ter">
                 <div class="row">
                     <div class="col px-0 ml-1">
+                        <img src="https://picsum.photos/id/1024/400/400">
+                    </div>
+                    <div class="col px-0">
                         <img src="https://picsum.photos/id/1025/400/400">
+                    </div>
+                    <div class="col px-0">
+                        <img src="https://picsum.photos/id/1026/400/400">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid seg-ter">
+                <div class="row">
+                    <div class="col px-0 ml-1">
+                        <img src="https://picsum.photos/id/1027/400/400">
                     </div>
                     <div class="col px-0">
                         <img src="https://picsum.photos/id/1028/400/400">
                     </div>
                     <div class="col px-0">
-                        <img src="https://picsum.photos/id/1039/400/400">
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid seg-ter">
-                <div class="row">
-                    <div class="col px-0 ml-1">
-                        <img src="https://picsum.photos/id/1060/400/400">
-                    </div>
-                    <div class="col px-0">
-                        <img src="https://picsum.photos/id/1083/400/400">
-                    </div>
-                    <div class="col px-0">
-                        <img src="https://picsum.photos/id/145/400/400">
+                        <img src="https://picsum.photos/id/1029/400/400">
                     </div>
                 </div>
             </div>
@@ -100,75 +132,47 @@
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <!--Feed-start-->
             <div class="card">
-                <div class="card-header">
-                    <h4 class="titulo">Juntos</h4>
-                    <button type="button" class="btn btn-link">12/14</button>
+                <div class="card-header d-flex justify-content-between">
+                    <h4 class="titulo">Flight High</h4>
+                    <p>12/09</p>
                 </div>
-                <img src="https://picsum.photos/id/678/550/400" class="card-img-top" alt="...">
+                <img src="https://picsum.photos/id/888/550/400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">23 Likes</h5>
+                    <h5 class="card-title">105 Likes</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-                    <button type="button" class="btn btn-light btn-sm">
-                        <i class="far fa-heart"></i>
-                    </button>
-                    <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-                    <button type="button" class="btn btn-light btn-sm">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </button>
                 </div>
             </div>
             <div class="card">
-                <div class="card-header">
-                    <h4 class="titulo">Cocinando</h4>
-                    <button type="button" class="btn btn-link">03/15</button>
+                <div class="card-header d-flex justify-content-between">
+                    <h4 class="titulo">Peras!!</h4>
+                    <p>01/02</p>
                 </div>
-                <img src="https://picsum.photos/id/292/550/400" class="card-img-top" alt="...">
+                <img src="https://picsum.photos/id/999/550/400" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">20 Likes</h5>
+                    <h5 class="card-title">205 Likes</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-                    <button type="button" class="btn btn-light btn-sm">
-                        <i class="far fa-heart"></i>
-                    </button>
-                    <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-                    <button type="button" class="btn btn-light btn-sm">
-                        <i class="fas fa-ellipsis-v"></i>
-                    </button>
                 </div>
             </div>
             <div class="card">
-                    <div class="card-header">
-                        <h4 class="titulo">Un sueño</h4>
-                        <button type="button" class="btn btn-link">05/15</button>
+                    <div class="card-header d-flex justify-content-between">
+                        <h4 class="titulo">Sun light</h4>
+                        <p>09/04</p>
                     </div>
-                    <img src="https://picsum.photos/id/724/550/400" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/777/550/400" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">115 Likes</h5>
+                        <h5 class="card-title">78 Likes</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-                        <button type="button" class="btn btn-light btn-sm">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-                        <button type="button" class="btn btn-light btn-sm">
-                            <i class="fas fa-ellipsis-v"></i>
-                        </button>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header">
-                        <h4 class="titulo">Muchos mundos, muchas historias</h4>
-                        <button type="button" class="btn btn-link">12/15</button>
+                    <div class="card-header d-flex justify-content-between">
+                        <h4 class="titulo">Rust</h4>
+                        <p>08/11</p>
                     </div>
-                    <img src="https://picsum.photos/id/444/550/400" class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/id/555/550/400" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">30 Likes</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
-                        <button type="button" class="btn btn-light btn-sm">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
-                        <button type="button" class="btn btn-light btn-sm">
-                            <i class="fas fa-ellipsis-v"></i>
-                        </button>
                     </div>
                 </div>
             <!--Feed-end-->
